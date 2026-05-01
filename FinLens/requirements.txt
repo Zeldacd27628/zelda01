@@ -1,0 +1,39 @@
+# FinLens 依赖清单
+# A股财报深度透视Agent
+
+# 核心依赖
+openai>=1.12.0              # OpenAI兼容API客户端（MiMo兼容）
+pydantic>=2.5.0             # 数据验证和模型定义
+
+# PDF解析
+PyMuPDF>=1.23.0             # PDF解析（fitz）
+pdfplumber>=0.10.0          # PDF表格提取
+pdf2image>=1.16.0           # PDF转图片（可选）
+
+# 数据处理
+pandas>=2.0.0               # 数据分析
+numpy>=1.24.0               # 数值计算
+
+# 行业数据（可选）
+akshare>=1.12.0             # 财经数据库（用于行业对比）
+
+# 日志和配置
+python-dotenv>=1.0.0        # 环境变量管理
+loguru>=0.7.0               # 日志记录
+
+# 进度条
+tqdm>=4.65.0                # 进度显示
+
+# 网络请求
+requests>=2.31.0            # HTTP请求
+httpx>=0.26.0               # 异步HTTP客户端
+
+# 类型提示
+typing-extensions>=4.8.0    # 类型提示扩展
+
+# CLI界面
+rich>=13.7.0                # 富文本终端输出
+click>=8.1.0                # 命令行界面
+
+# 缓存
+diskcache>=5.6.0            # 磁盘缓存
